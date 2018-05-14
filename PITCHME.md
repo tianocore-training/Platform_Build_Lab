@@ -61,13 +61,13 @@ Note:
 ---
 @title[Ubuntu 16.04 Pre-requisites]
 ### <p align="right"><span class="gold" >Pre-requisites Ubuntu 16.04 </span></p>
-Instructions from:
-https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 
-Example Ubuntu 16.04<br>
-The following need to be accessible for building Edk2<br> 
+Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 
+"> tianocore wiki</a> 
+- Example Ubuntu 16.04<br>
+- The following need to be accessible for building Edk2<br> 
 From the terminal prompt (Cnt-Alt-T):
 ```shell
-bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm 
+bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm <br>
 
 # build-essential - Informational list of build-essential packages
 # uuid-dev - Universally Unique ID library (headers and static libraries)
@@ -110,33 +110,41 @@ qemu-system-x86_64 -pflash bios.bin -hda fat:rw:hda-contents -net none     -debu
 ```
 
 Save and Exit
+
+
 ---?image=/assets/images/slides/Slide7.JPG
 @title[Optional - Downloading the Edk2 Source]
 ### <p align="right"><span class="gold" >Optional - Downloading the Edk2 Source</span></p>
 
 
 Note:
-OPTIONAL - Open a terminal prompt and create a source working directory
-```
+
+
+- OPTIONAL - Open a terminal prompt and create a source working directory
+
+
 bash$ mkdir ~/src 
 bash$ cd ~/src 
-```
-OPTIONAL - Internet Proxies – (company Firewall used for example)
 
-```
+
+- OPTIONAL - Internet Proxies – (company Firewall used for example)
+
+
 bash$ export http_proxy=http://proxy-us.company.com:911
 bash$ export ftp_proxy=$http_proxy
-```
-OPTIONAL - Download edk2 source tree using Git
-```
-bash$ git clone https://github.com/tianocore/edk2
-```
-OPTIONAL - Build the tools
-```
-bash$ make -C edk2/BaseTools 
-```
 
-NOTE: Lab Material will have a different “edk2”
+
+- OPTIONAL - Download edk2 source tree using Git
+
+bash$ git clone https://github.com/tianocore/edk2
+
+
+- OPTIONAL - Build the tools
+
+bash$ make -C edk2/BaseTools 
+
+
+- NOTE: Lab Material will have a different “edk2”
 
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -159,12 +167,13 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 
 
 Note:
+
 - Open a terminal prompt  (Alt-Cnt-T)
 
 - Create a working  space source directory under the home directory
-```   
+   
 bash$ mkdir ~src
-```
+
 - From the FW folder, copy and paste folder “~FW/edk2” to ~src
 
 ---?image=/assets/images/slides/Slide14.JPG
@@ -173,11 +182,10 @@ bash$ mkdir ~src
 
 
 Note:
+
 - Rename or mv the directory “~src/edk2/BaseTools” 
-```
    bash$ cd ~src/edk2
    bash$ mv BaseTools BaseToolsX
-```
 - Extract the file ~FW/edk2Linux/BaseTools.tar.gz  to  ~src/edk2
 
 ---?image=/assets/images/slides/Slide16.JPG
@@ -187,15 +195,13 @@ Note:
 
 Note:
 - Run Make from the Terminal prompt
-```
 bash$ cd ~src/edk2
 bash$ make –C BaseTools
-```
 - Run edksetup (note This will need to be done for every new Terminal prompt)
 
-```
 bash$ . edksetup.sh
-```
+
+
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Build Ovmf sub Section]
 <br><br><br><br><br>
@@ -255,7 +261,7 @@ Note:
 - 
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Ovmf Edk2 -Verify]
-### <p align="right"><span class="gold" >Verify Build Ovmf Edk2 Succedded </span></p>
+### <p align="right"><span class="gold" >Verify Build Ovmf Edk2 Succeedded </span></p>
 <p align="left"><span style="font-size:0.75em" >OVMF.fd should be in the Build directory<br>
 &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:</span></p>
 ```
@@ -385,11 +391,12 @@ Note:
 ---?image=/assets/images/slides3/Slide5.JPG
 @title[MinnowBoard MAX/ Turbot Platform]
 <br>
-<p align="left"><span class="gold" >Where to get Open Source MinnowBoard Max</span></p>
-
+<p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
+<br>
+<br>
 - <span style="font-size:0.8em"><font  color="yellow">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
   - <span style="font-size:0.8em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
-- <span style="font-size:0.8em"><font  color="white">Bin Object Modules </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
+- <span style="font-size:0.8em"><font  color="white">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
 - <span style="font-size:0.8em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
 
 Note:
@@ -398,11 +405,13 @@ Note:
 ---?image=/assets/images/slides3/Slide7.JPG
 @title[MinnowBoard MAX/ Turbot Platform]
 <br>
-<p align="left"><span class="gold" >Where to get Open Source MinnowBoard Max</span></p>
+<p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
+<br>
+<br>
 
 - <span style="font-size:0.8em"><font  color="white">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
   - <span style="font-size:0.8em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
-- <span style="font-size:0.8em"><font  color="Yellow">Bin Object Modules </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
+- <span style="font-size:0.8em"><font  color="Yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
 - <span style="font-size:0.8em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
 
 Note:
@@ -431,27 +440,19 @@ bash$ sudo apt-get install screen
 @title[Get the Minnowboard Max Source]
 ### <p align="right"><span class="gold" >Get the Minnowboard Max Source</span></p>
 
-<p align="right">-Getting the Source</p>
-
 - Extract the file ~FW/PlatformBuildLab/MinnowboardMax.zip  to  ~src
 
 
 Note:
 -  Extract the file ~FW/PlatformBuildLab/MinnowboardMax.zip  to  ~src
 
----?image=/assets/images/slides3/Slide13.JPG
+---?image=/assets/images/slides3/Slide14.JPG
 @title[Get the BaseTools]
 ### <p align="right"><span class="gold" >Get the BaseTools for Max  </span></p>
 
-<p align="left">Extract the Rename or mv the directory “~src/Max/edk2/BaseTools”</p>
-```
-   bash$ cd ~src/Max/edk2
-   bash$ mv BaseTools BaseToolsX
-```   
-- Extract the file ~FW/PlatformBuildLab/BaseToolsMax.tar.gz  to  ~src/Max/edk2
-
 
 Note:
+
 -  Extract the Rename or mv the directory “~src/Max/edk2/BaseTools”
 ```
  bash$ cd ~src/Max/edk2
@@ -474,18 +475,18 @@ Note:
 ### <p align="right"><span class="gold" >Steps to Build & Install Firmware</span></p>
 
 1. Open Terminal prompt (Cnt-Alt-T)
-2. Cd to  project directory <br>
-    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` <br>
+2. Cd to  project directory :    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` <br>
 3. Invoke the build process
 4. Locate build output (.BIN file for BIOS image)
 5. Flash binary image onto the platform
 6. Reset and boot new firmware to UEFI Shell
 
+
 Note:
 
- Slide says it all
+Slide says it all
  
- ---
+---
 @title[fix shell properties ]
 ### <p align="right"><span class="gold" >fix shell properties to Execute</span></p>
 
@@ -667,8 +668,10 @@ Note:
 <br>
 <br>
 <br>
+<br>
+<br>
 
-<span style="font-size:0.6em">The EDK II build generates multiple firmware volumes, which are combined in the .BIN image</span>
+<span style="font-size:0.5em">The EDK II build generates multiple firmware volumes, which are combined in the .BIN image</span>
 
 
 Note:
@@ -676,7 +679,7 @@ The EDK II build generates multiple firmware volumes, which are combined in the 
 
 ---?image=/assets/images/slides3/Slide41.JPG
 @title[Flash onto the MinnowBoard MAX]
-### <p align="right"><span class="gold" >Getting the New BIOS onto the MinnowBoard MAX</span></p>
+### <p align="right"><span class="gold" >Flasing the New BIOS</span></p>
  
 Note:
 1.  Access Max Binary image file from build folder
@@ -691,7 +694,7 @@ Note:
 
 ---?image=/assets/images/slides3/Slide43.JPG
 @title[Flash onto the MinnowBoard MAX 02]
-### <p align="right"><span class="gold" >Getting the New BIOS onto the MinnowBoard MAX</span></p>
+### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
  
 Note:
 5. Run update .efi utility with either BIN file  (Note the “TAB” Key will fill out the command line for you 
