@@ -66,7 +66,7 @@ Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki
 - Example Ubuntu 16.04<br>
 - The following need to be accessible for building Edk2<br> 
 From the terminal prompt (Cnt-Alt-T):
-```shell
+```
 bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm <br>
 
 # build-essential - Informational list of build-essential packages
@@ -227,7 +227,6 @@ bash$ . edksetup.sh
 <br>
 <br>
 <br>
-<br>
 <p align="right"><span style="font-size:0.6em" >More info: <a href=" https://github.com/tianocore/tianocore.github.io/wiki/OVMF "> https://github.com/tianocore/tianocore.github.io/wiki/OVMF </a>
 </span></p>
 
@@ -239,23 +238,21 @@ Note:
 - Edit the file Conf/target.txt
 ```
 bash$ gedit Conf/target.txt
-
-   #
+```
+   
 1. ACTIVE_PLATFORM       = OvmfPkg/OvmfPkgX64.dsc
-   #. . .
 2. TARGET_ARCH           = X64
-   #. . .
 3. TOOL_CHAIN_TAG        = GCC5
 
-```
+
 - Save and Exit
 ```
 bash$ cd ~src/edk2
 bash$ build
 ```
 ---?image=/assets/images/slides/Slide22.JPG
-@title[Build Ovmf Edk2 -build inside Termial]
-### <p align="right"><span class="gold" >Build Ovmf Edk2 –build inside Termial</span></p>
+@title[Build Ovmf Edk2 -build inside Terminal]
+### <p align="right"><span class="gold" >Build Ovmf Edk2 –build inside Terminal</span></p>
 
 Note:
 - 
@@ -264,7 +261,7 @@ Note:
 ### <p align="right"><span class="gold" >Verify Build Ovmf Edk2 Succeedded </span></p>
 <p align="left"><span style="font-size:0.75em" >OVMF.fd should be in the Build directory<br>
 &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:</span></p>
-```
+```shell
         ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd
 ```
 
@@ -374,8 +371,8 @@ bash$ screen /dev/ttyUSBn 115200
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Build Max/Turbot Section]
 <br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Platform HW Setup Lab </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup for MinnowBoard Turbot </span>
+## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build MinnowBoard Turbot Lab </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 
 
@@ -392,12 +389,12 @@ Note:
 @title[MinnowBoard MAX/ Turbot Platform]
 <br>
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
+
 <br>
-<br>
-- <span style="font-size:0.8em"><font  color="yellow">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
-  - <span style="font-size:0.8em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
-- <span style="font-size:0.8em"><font  color="white">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
-- <span style="font-size:0.8em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
+- <span style="font-size:0.9em"><font  color="yellow">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
+  - <span style="font-size:0.9em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
+- <span style="font-size:0.9em"><font  color="white">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
+- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
 
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
@@ -407,12 +404,12 @@ Note:
 <br>
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
 <br>
-<br>
 
-- <span style="font-size:0.8em"><font  color="white">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
-  - <span style="font-size:0.8em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
-- <span style="font-size:0.8em"><font  color="Yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
-- <span style="font-size:0.8em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
+
+- <span style="font-size:0.9em"><font  color="white">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
+  - <span style="font-size:0.9em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
+- <span style="font-size:0.9em"><font  color="Yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
+- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
 
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
@@ -455,7 +452,7 @@ Note:
 
 -  Extract the Rename or mv the directory “~src/Max/edk2/BaseTools”
 ```
- bash$ cd ~src/Max/edk2
+ bash$ cd ~src/Max/edk2<Br>
  bash$ mv BaseTools BaseTools
 ```
 
@@ -472,8 +469,9 @@ Note:
 
 ---
 @title[Steps to Build & Install Firmware]
+<br><br>
 ### <p align="right"><span class="gold" >Steps to Build & Install Firmware</span></p>
-
+<br>
 1. Open Terminal prompt (Cnt-Alt-T)
 2. Cd to  project directory :    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` <br>
 3. Invoke the build process
@@ -488,9 +486,11 @@ Slide says it all
  
 ---
 @title[fix shell properties ]
+<br><br>
 ### <p align="right"><span class="gold" >fix shell properties to Execute</span></p>
-
+<br>
 - Open Terminal prompt (Cnt-Alt-T)
+<br>
 ```
 bash$ cd ~src/Max/edk2
 bash$ chmod +x edksetup.sh
