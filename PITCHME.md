@@ -53,10 +53,10 @@ Note:
 
 
 ---?image=assets/images/binary-strings-black2.jpg
-@title[Build OVMF Section]
+@title[Lab 1 -Build OVMF Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab 1: Build OvmfPkg</span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup OvmfPkg to build and then run under QEMU with Ubuntu</span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup OvmfPkg to build and run w/ QEMU with Ubuntu</span>
 
 ---
 @title[Ubuntu 16.04 Pre-requisites]
@@ -65,7 +65,7 @@ Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki
 "> tianocore wiki Ubuntu_1610</a> 
 - Example Ubuntu 16.04<br>
 - The following need to be accessible for building Edk II Platforms, From the terminal prompt (Cnt-Alt-T) :
-```
+```shell
 bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm 
 ```
 ```Assembly
@@ -76,7 +76,7 @@ bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm
 ; gcc-5 - GNU C compiler (v5.4.0 as of Ubuntu 16.04 LTS)
 ; nasm - General-purpose x86 assembler 
 ```
-```
+```shell
 bash$ sudo apt-get install qemu
 ```
 ```Assembly
@@ -276,7 +276,7 @@ Note:
  
 
 ---?image=assets/images/binary-strings-black2.jpg
-@title[Setup MAX HW Section]
+@title[Lab 2 -Setup MAX HW Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab 2: Platform HW Setup</span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup hardware for MinnowBoard Max/Turbot </span>
@@ -374,11 +374,11 @@ bash$ screen /dev/ttyUSBn 115200
 @title[End of Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Lab </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>  or&nbsp;&nbsp; <b> &gt; </b> &nbsp;&nbsp;to continue  </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>  or&nbsp;&nbsp; <b> <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/24'>&gt;</a> </b> &nbsp;&nbsp;to continue  </span>
  
 
 ---?image=assets/images/binary-strings-black2.jpg 
-@title[Build Max/Turbot Section]
+@title[Lab 3 -Build Max/Turbot Section]
 <br><br><br><br><br>
 ## <p align="center"><span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab 3: Build MinnowBoard Turbot</span></p>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
