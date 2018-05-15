@@ -45,9 +45,9 @@ Note:
 
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package<a href=''>Link</a></span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot<a href=''>Link</a></span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard Max/Turbot<a href=''>Link</a></span> <br><br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Link</a></span><br><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Link</a></span><br><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
  
 
 
@@ -62,10 +62,10 @@ Note:
 @title[Ubuntu 16.04 Pre-requisites]
 ### <p align="right"><span class="gold" >Pre-requisites Ubuntu 16.04 </span></p>
 Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 
-"> tianocore wiki</a> 
+"> tianocore wiki Ubuntu_1610</a> 
 - Example Ubuntu 16.04<br>
-- The following need to be accessible for building Edk2<br> 
-From the terminal prompt (Cnt-Alt-T):
+- The following need to be accessible for building Edk2, From the terminal prompt (Cnt-Alt-T) :
+
 ```
 bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm <br>
 
@@ -114,7 +114,7 @@ Save and Exit
 
 ---?image=/assets/images/slides/Slide7.JPG
 @title[Optional - Downloading the Edk2 Source]
-### <p align="right"><span class="gold" >Optional - Downloading the Edk2 Source</span></p>
+### <p align="right"><span class="gold" >Down load the Edk2 Source<br>- Optional</span></p>
 
 
 Note:
@@ -123,25 +123,25 @@ Note:
 - OPTIONAL - Open a terminal prompt and create a source working directory
 
 
-bash$ mkdir ~/src 
-bash$ cd ~/src 
+`bash$ mkdir ~/src` <br>
+`bash$ cd ~/src `
 
 
 - OPTIONAL - Internet Proxies – (company Firewall used for example)
 
 
-bash$ export http_proxy=http://proxy-us.company.com:911
-bash$ export ftp_proxy=$http_proxy
+`bash$ export http_proxy=http://proxy-us.company.com:911` <br>
+`bash$ export ftp_proxy=$http_proxy`
 
 
 - OPTIONAL - Download edk2 source tree using Git
 
-bash$ git clone https://github.com/tianocore/edk2
+`bash$ git clone https://github.com/tianocore/edk2 `<br>
 
 
 - OPTIONAL - Build the tools
 
-bash$ make -C edk2/BaseTools 
+`bash$ make -C edk2/BaseTools `
 
 
 - NOTE: Lab Material will have a different “edk2”
@@ -155,15 +155,16 @@ bash$ make -C edk2/BaseTools
 
 ---?image=/assets/images/slides/Slide10.JPG
 @title[Build Ovmf Edk2 -getting the Source ]
-### <p align="right"><span class="gold" >Build Ovmf Edk2 –Getting the Source</span></p>
-
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
+<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
 
 Note:
 Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory FW )
 
 ---?image=/assets/images/slides/Slide12.JPG
 @title[Build Ovmf Edk2 -getting the Source 02]
-### <p align="right"><span class="gold" >Build Ovmf Edk2 –Getting the Source</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
+<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
 
 
 Note:
@@ -178,7 +179,8 @@ bash$ mkdir ~src
 
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Build Ovmf Edk2 -getting the Source 03]
-### <p align="right"><span class="gold" >Build Ovmf Edk2 –Getting the Source</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
+<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
 
 
 Note:
@@ -190,7 +192,8 @@ Note:
 
 ---?image=/assets/images/slides/Slide16.JPG
 @title[Build Ovmf Edk2 -getting the Source 04]
-### <p align="right"><span class="gold" >Build Ovmf Edk2 –Getting the Source</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
+<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
 
 
 Note:
@@ -211,9 +214,8 @@ bash$ . edksetup.sh
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Build Ovmf Edk2 -update target.txt]
-### <p align="right"><span class="gold" >Build Ovmf Edk2 –update target.txt</span></p>
-<br>
-<br>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
+<p align="right"><span style="font-size:0.8em" >–Update Target.txt</span></p>
 <br>
 <br>
 <br>
@@ -252,13 +254,15 @@ bash$ build
 ```
 ---?image=/assets/images/slides/Slide22.JPG
 @title[Build Ovmf Edk2 -build inside Terminal]
-### <p align="right"><span class="gold" >Build Ovmf Edk2 –build inside Terminal</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
+<p align="right"><span style="font-size:0.8em" >–Build inside Terminal</span></p>
 
 Note:
 - 
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Ovmf Edk2 -Verify]
-### <p align="right"><span class="gold" >Verify Build Ovmf Edk2 Succeedded </span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
+<p align="right"><span style="font-size:0.8em" >–Verify Build Succeedded </span></p>
 <p align="left"><span style="font-size:0.75em" >OVMF.fd should be in the Build directory<br>
 &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:</span></p>
 ```shell
@@ -274,7 +278,7 @@ Note:
 @title[Setup MAX HW Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Platform HW Setup Lab </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup for MinnowBoard Turbot </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup for MinnowBoard Max/Turbot </span>
 
 ---?image=/assets/images/slides2/Slide3.JPG
 @title[MAX/Turbot HW]
@@ -304,15 +308,12 @@ Note:
 
 Note:
 - Terminal prompt (Cnt-Alt-T)
-```
-bash$ sudo apt-get install screen
-bash$ cd $Home
-bash$ gedit ~.screenrc
-```
+`bash$ sudo apt-get install screen`
+`bash$ cd $Home`
+`bash$ gedit ~.screenrc`
 
-```
- shell /bin/bash
-```
+
+` shell /bin/bash`
 
 Click Save
 
@@ -366,12 +367,12 @@ bash$ screen /dev/ttyUSBn 115200
 ```
 - Note: Cnt-H for Backspace
 
-
+**Warning do not use any other power supply than 5V or the board will Fry
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Build Max/Turbot Section]
 <br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build MinnowBoard Turbot Lab </span>
+## <p align="center"><span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build MinnowBoard Turbot Lab </span></p>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 
@@ -389,7 +390,6 @@ Note:
 @title[MinnowBoard MAX/ Turbot Platform]
 <br>
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
-
 <br>
 - <span style="font-size:0.9em"><font  color="yellow">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
   - <span style="font-size:0.9em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
@@ -404,8 +404,6 @@ Note:
 <br>
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
 <br>
-
-
 - <span style="font-size:0.9em"><font  color="white">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
   - <span style="font-size:0.9em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
 - <span style="font-size:0.9em"><font  color="Yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
@@ -470,7 +468,7 @@ Note:
 ---
 @title[Steps to Build & Install Firmware]
 <br><br>
-### <p align="right"><span class="gold" >Steps to Build & Install Firmware</span></p>
+### <p align="center"><span class="gold" >Steps to Build & Install Firmware</span></p>
 <br>
 1. Open Terminal prompt (Cnt-Alt-T)
 2. Cd to  project directory :    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` <br>
@@ -478,6 +476,8 @@ Note:
 4. Locate build output (.BIN file for BIOS image)
 5. Flash binary image onto the platform
 6. Reset and boot new firmware to UEFI Shell
+<br>
+<span style="font-size:0.6em"><font color="gray"><i>Next slides will follow the above steps</i></font></span>
 
 
 Note:
@@ -486,10 +486,13 @@ Slide says it all
  
 ---
 @title[fix shell properties ]
-<br><br>
-### <p align="right"><span class="gold" >fix shell properties to Execute</span></p>
+<br>
+<p align="right"><span class="gold" >Open a Trminal prompt - fix shell properties to Execute</span></p>
+<br>
 <br>
 - Open Terminal prompt (Cnt-Alt-T)
+- Cd to work space directory
+- Fix script files
 <br>
 ```
 bash$ cd ~src/Max/edk2
@@ -518,14 +521,14 @@ Note:
 ---?image=/assets/images/slides3/Slide22.JPG
 <!-- .slide: data-transition="none" -->		 
 @title[Examine Command Line & Build Parameters]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 
 +++?image=/assets/images/slides3/Slide23.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Examine Command Line & Build Parameters 02]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 Note:
  
@@ -533,28 +536,28 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Examine Command Line & Build Parameters 03]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 Note:
 +++?image=/assets/images/slides3/Slide25.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Examine Command Line & Build Parameters 04]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 Note:
 +++?image=/assets/images/slides3/Slide26.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Examine Command Line & Build Parameters 05]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 Note:
 +++?image=/assets/images/slides3/Slide27.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Examine Command Line & Build Parameters 06]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 Note:
 
@@ -562,7 +565,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Examine Command Line & Build Parameters 07]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 Note:
 
@@ -570,7 +573,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Examine Command Line & Build Parameters 08]
-### <p align="right"><span class="gold" >Examine Command Line & Build Parameters</span></p>
+### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
 
 Note:
 
@@ -720,10 +723,9 @@ The EDK II front page will show the BIOS ID with Date/time stamp
 @title[Summary]
 ##### <p align="center"<span class="gold"   >Summary </span></p><br>
 
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package<a href=''>Link</a></span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot<a href=''>Link</a></span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard Max/Turbot<a href=''>Link</a></span> <br><br>
-
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Link</a></span><br><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Link</a></span><br><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
 
 
 ---?image=assets/images/gitpitch-audience.jpg
