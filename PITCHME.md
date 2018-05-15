@@ -730,9 +730,9 @@ The EDK II front page will show the BIOS ID with Date/time stamp
 @title[Summary]
 ##### <p align="center"<span class="gold"   >Summary </span></p><br>
 
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Link</a></span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Link</a></span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Lab 1:</a> Build a EDK II Platform using OVMF package </span><br><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Lab 2:</a> Hardware Setup for Minnowboard Max/Turbot </span><br><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Lab 3:</a> Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot </span> <br><br>
  
 
 ---?image=assets/images/gitpitch-audience.jpg
