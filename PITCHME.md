@@ -374,7 +374,7 @@ bash$ screen /dev/ttyUSBn 115200
 @title[End of Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Lab </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>  or&nbsp;&nbsp; <b> <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/24'>@fa[chevron-right gp-bullet-gold]</a> </b> &nbsp;&nbsp;to continue  </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>&nbsp;&nbsp;  or&nbsp;&nbsp;  <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/24'>@fa[chevron-right gp-bullet-cyan]</a>  &nbsp;&nbsp;to continue  </span>
  
 
 ---?image=assets/images/binary-strings-black2.jpg 
