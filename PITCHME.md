@@ -223,7 +223,6 @@ bash$ . edksetup.sh
 <br>
 <br>
 <br>
-<br>
 <p align="right"><span style="font-size:0.6em" >More info: <a href=" https://github.com/tianocore/tianocore.github.io/wiki/OVMF "> https://github.com/tianocore/tianocore.github.io/wiki/OVMF </a>
 </span></p>
 
@@ -267,6 +266,11 @@ Note:
 
 
 Note:
+---?image=assets/images/gitpitch-audience.jpg
+@title[End of Section]
+<br><br><br><br><br>
+## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Lab </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a> </span>
  
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -363,6 +367,13 @@ bash$ screen /dev/ttyUSBn 115200
 - Note: Cnt-H for Backspace
 
 **Warning do not use any other power supply than 5V or the board will Fry
+
+---?image=assets/images/gitpitch-audience.jpg
+@title[End of Section]
+<br><br><br><br><br>
+## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Lab </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>  or <b>&gt;</b> to continue  </span>
+ 
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Build Max/Turbot Section]
