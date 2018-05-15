@@ -55,7 +55,7 @@ Note:
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Build OVMF Section]
 <br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build OvmfPkg Platform</span>
+## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab 1: Build OvmfPkg Platform</span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup OvmfPkg to run under QEMU with Ubuntu</span>
 
 ---
@@ -270,13 +270,13 @@ Note:
 @title[End of Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Lab </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a> </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the beginning</a> </span>
  
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Setup MAX HW Section]
 <br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Platform HW Setup Lab </span>
+## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab 2: Platform HW Setup Lab </span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup for MinnowBoard Max/Turbot </span>
 
 ---?image=/assets/images/slides2/Slide3.JPG
@@ -372,7 +372,7 @@ bash$ screen /dev/ttyUSBn 115200
 @title[End of Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Lab </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>  or&nbsp;&nbsp; <b>&rsaquo;</b> &nbsp;&nbsp;to continue  </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>  or&nbsp;&nbsp; <b> &gt; </b> &nbsp;&nbsp;to continue  </span>
  
 
 ---?image=assets/images/binary-strings-black2.jpg
