@@ -64,7 +64,7 @@ Note:
 Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 
 "> tianocore wiki Ubuntu_1610</a> 
 - Example Ubuntu 16.04<br>
-- The following need to be accessible for building Edk2, From the terminal prompt (Cnt-Alt-T) :
+- The following need to be accessible for building Edk II Platforms, From the terminal prompt (Cnt-Alt-T) :
 
 ```Assembly
 bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm <br>
@@ -109,8 +109,8 @@ Save and Exit
 
 
 ---?image=/assets/images/slides/Slide7.JPG
-@title[Optional - Downloading the Edk2 Source]
-### <p align="right"><span class="gold" >Down load the Edk2 Source<br>- Optional</span></p>
+@title[Optional - Downloading the Edk II Source]
+### <p align="right"><span class="gold" >Down load the Edk II Source<br>- Optional</span></p>
 
 
 Note:
@@ -151,14 +151,16 @@ Note:
 
 ---?image=/assets/images/slides/Slide10.JPG
 @title[Build Ovmf Edk2 -getting the Source ]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
 
 Note:
 Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory FW )
 
 ---?image=/assets/images/slides/Slide12.JPG
 @title[Build Ovmf Edk2 -getting the Source 02]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
 
 
 Note:
@@ -173,7 +175,8 @@ bash$ mkdir ~src
 
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Build Ovmf Edk2 -getting the Source 03]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
 
 
 
@@ -186,7 +189,8 @@ Note:
 
 ---?image=/assets/images/slides/Slide16.JPG
 @title[Build Ovmf Edk2 -getting the Source 04]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
 
 
 Note:
@@ -207,8 +211,8 @@ bash$ . edksetup.sh
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Build Ovmf Edk2 -update target.txt]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Update Target.txt</font></span></p>
-<br>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
 <br>
 <br>
 <br>
@@ -246,13 +250,15 @@ bash$ build
 ```
 ---?image=/assets/images/slides/Slide22.JPG
 @title[Build Ovmf Edk2 -build inside Terminal]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Build inside Terminal</font></span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Inside Terminal</font></span></p>
 
 Note:
 - 
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Ovmf Edk2 -Verify]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Verify Build Succeedded</font></span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Verify Build Succeedded</font></span></p>
 <p align="left"><span style="font-size:0.75em" >OVMF.fd should be in the Build directory<br>
 &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:</span></p>
 ```shell
