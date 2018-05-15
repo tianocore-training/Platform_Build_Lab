@@ -56,7 +56,7 @@ Note:
 @title[Build OVMF Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab 1: Build OvmfPkg</span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup OvmfPkg to run under QEMU with Ubuntu</span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup OvmfPkg to build and then run under QEMU with Ubuntu</span>
 
 ---
 @title[Ubuntu 16.04 Pre-requisites]
@@ -65,19 +65,21 @@ Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki
 "> tianocore wiki Ubuntu_1610</a> 
 - Example Ubuntu 16.04<br>
 - The following need to be accessible for building Edk II Platforms, From the terminal prompt (Cnt-Alt-T) :
-
-```Assembly
+```
 bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm 
-
+```
+```Assembly
 ; build-essential - Informational list of build-essential packages
 ; uuid-dev - Universally Unique ID library (headers and static libraries)
 ; iasl - Intel ASL compiler/decompiler (also provided by acpica-tools)
 ; git - support for git revision control system
 ; gcc-5 - GNU C compiler (v5.4.0 as of Ubuntu 16.04 LTS)
 ; nasm - General-purpose x86 assembler 
-
+```
+```
 bash$ sudo apt-get install qemu
-
+```
+```Assembly
 ; Qemu – Emulation with Intel architecture with UEFI Shell 
 ```
 
