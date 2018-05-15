@@ -41,13 +41,13 @@ Note:
 ---  
 @title[Lesson Objective]
 <BR>
-### <p align="center"<span class="gold"   >Lesson Objective </span></p><br>
+### <p align="center"<span class="gold"   >Platform Build Labs </span></p><br>
 
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Link</a></span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Link</a></span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Lab 1: Build a EDK II Platform using OVMF package: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Link</a></span><br><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Lab 2: Hardware Setup for Minnowboard Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Link</a></span><br><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Lab 3: Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
  
 
 
