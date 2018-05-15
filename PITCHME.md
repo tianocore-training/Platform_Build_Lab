@@ -67,7 +67,7 @@ Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki
 - The following need to be accessible for building Edk II Platforms, From the terminal prompt (Cnt-Alt-T) :
 
 ```Assembly
-bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm <br>
+bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm 
 
 ; build-essential - Informational list of build-essential packages
 ; uuid-dev - Universally Unique ID library (headers and static libraries)
@@ -110,7 +110,7 @@ Save and Exit
 
 ---?image=/assets/images/slides/Slide7.JPG
 @title[Optional - Downloading the Edk II Source]
-### <p align="right"><span class="gold" >Down load the Edk II Source<br>- Optional</span></p>
+### <p align="right"><span class="gold" >Down load the Edk II Source<br><i>- Optional</i></span></p>
 
 
 Note:
@@ -224,7 +224,6 @@ bash$ . edksetup.sh
 <br>
 <br>
 <br>
-<br>
 <p align="right"><span style="font-size:0.6em" >More info: <a href=" https://github.com/tianocore/tianocore.github.io/wiki/OVMF "> https://github.com/tianocore/tianocore.github.io/wiki/OVMF </a>
 </span></p>
 
@@ -258,7 +257,7 @@ Note:
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Ovmf Edk2 -Verify]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Verify Build Succeedded</font></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Verify Build Succeeded</font></span></p>
 <p align="left"><span style="font-size:0.75em" >OVMF.fd should be in the Build directory<br>
 &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:</span></p>
 ```shell
