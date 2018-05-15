@@ -375,7 +375,7 @@ bash$ screen /dev/ttyUSBn 115200
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>  or&nbsp;&nbsp; <b> &gt; </b> &nbsp;&nbsp;to continue  </span>
  
 
----?image=assets/images/binary-strings-black2.jpg
+---?image=assets/images/binary-strings-black2.jpg 
 @title[Build Max/Turbot Section]
 <br><br><br><br><br>
 ## <p align="center"><span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build MinnowBoard Turbot Lab </span></p>
