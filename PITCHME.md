@@ -224,7 +224,6 @@ bash$ . edksetup.sh
 <br>
 <br>
 <br>
-<br>
 <p align="right"><span style="font-size:0.6em" >More info: <a href=" https://github.com/tianocore/tianocore.github.io/wiki/OVMF "> https://github.com/tianocore/tianocore.github.io/wiki/OVMF </a>
 </span></p>
 
