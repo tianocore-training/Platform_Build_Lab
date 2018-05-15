@@ -47,7 +47,7 @@ Note:
 -->
  @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Link</a></span><br><br>
  @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Link</a></span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
  
 
 
@@ -66,19 +66,19 @@ Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki
 - Example Ubuntu 16.04<br>
 - The following need to be accessible for building Edk2, From the terminal prompt (Cnt-Alt-T) :
 
-```
+```Assembly
 bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm <br>
 
-# build-essential - Informational list of build-essential packages
-# uuid-dev - Universally Unique ID library (headers and static libraries)
-# iasl - Intel ASL compiler/decompiler (also provided by acpica-tools)
-# git - support for git revision control system
-# gcc-5 - GNU C compiler (v5.4.0 as of Ubuntu 16.04 LTS)
-# nasm - General-purpose x86 assembler 
+; build-essential - Informational list of build-essential packages
+; uuid-dev - Universally Unique ID library (headers and static libraries)
+; iasl - Intel ASL compiler/decompiler (also provided by acpica-tools)
+; git - support for git revision control system
+; gcc-5 - GNU C compiler (v5.4.0 as of Ubuntu 16.04 LTS)
+; nasm - General-purpose x86 assembler 
 
 bash$ sudo apt-get install qemu
 
-# Qemu – Emulation with Intel architecture with UEFI Shell 
+; Qemu – Emulation with Intel architecture with UEFI Shell 
 ```
 
 Note:
@@ -90,25 +90,21 @@ Note:
 
 Note:
 Create a run-ovmf directory under the home directory
-```
-bash$ cd ~
-bash$ mkdir ~run-ovmf
-bash$ cd run-ovmf
-```
 
-Create a directory to use as a hard disk image
-```
-bash$ mkdir hda-contents
-```
+`bash$ cd ~`<br>
+`bash$ mkdir ~run-ovmf`<br>
+`bash$ cd run-ovmf`
 
-Create a Linux shell script to run the QEMU from the run-ovmf directory
-```
-bash$ gedit RunQemu.sh
+- Create a directory to use as a hard disk image
 
+'bash$ mkdir hda-contents'
 
-qemu-system-x86_64 -pflash bios.bin -hda fat:rw:hda-contents -net none     -debugcon file:debug.log -global isa-debugcon.iobase=0x402 
-```
+- Create a Linux shell script to run the QEMU from the run-ovmf directory
 
+`bash$ gedit RunQemu.sh`
+<br>
+`qemu-system-x86_64 -pflash bios.bin -hda fat:rw:hda-contents -net none     -debugcon file:debug.log -global isa-debugcon.iobase=0x402 `
+<br>
 Save and Exit
 
 
@@ -155,16 +151,14 @@ Note:
 
 ---?image=/assets/images/slides/Slide10.JPG
 @title[Build Ovmf Edk2 -getting the Source ]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
-<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
 
 Note:
 Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory FW )
 
 ---?image=/assets/images/slides/Slide12.JPG
 @title[Build Ovmf Edk2 -getting the Source 02]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
-<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
 
 
 Note:
@@ -179,8 +173,8 @@ bash$ mkdir ~src
 
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Build Ovmf Edk2 -getting the Source 03]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
-<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
+
 
 
 Note:
@@ -192,8 +186,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide16.JPG
 @title[Build Ovmf Edk2 -getting the Source 04]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
-<p align="right"><span style="font-size:0.8em" >–Getting the Source</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Getting the Source</font></span></p>
 
 
 Note:
@@ -214,8 +207,7 @@ bash$ . edksetup.sh
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Build Ovmf Edk2 -update target.txt]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
-<p align="right"><span style="font-size:0.8em" >–Update Target.txt</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Update Target.txt</font></span></p>
 <br>
 <br>
 <br>
@@ -254,15 +246,13 @@ bash$ build
 ```
 ---?image=/assets/images/slides/Slide22.JPG
 @title[Build Ovmf Edk2 -build inside Terminal]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
-<p align="right"><span style="font-size:0.8em" >–Build inside Terminal</span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Build inside Terminal</font></span></p>
 
 Note:
 - 
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Ovmf Edk2 -Verify]
-### <p align="right"><span class="gold" >Build EDK II Ovmf</span></p>
-<p align="right"><span style="font-size:0.8em" >–Verify Build Succeedded </span></p>
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br><span style="font-size:0.8em" ><font color=#e49436;>–Verify Build Succeedded</font></span></p>
 <p align="left"><span style="font-size:0.75em" >OVMF.fd should be in the Build directory<br>
 &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:</span></p>
 ```shell
@@ -307,9 +297,9 @@ Note:
 
 
 Note:
-- Terminal prompt (Cnt-Alt-T)
-`bash$ sudo apt-get install screen`
-`bash$ cd $Home`
+- Terminal prompt (Cnt-Alt-T)<br>
+`bash$ sudo apt-get install screen`<br>
+`bash$ cd $Home`<br>
 `bash$ gedit ~.screenrc`
 
 
@@ -469,7 +459,7 @@ Note:
 @title[Steps to Build & Install Firmware]
 <br><br>
 ### <p align="center"><span class="gold" >Steps to Build & Install Firmware</span></p>
-<br>
+
 1. Open Terminal prompt (Cnt-Alt-T)
 2. Cd to  project directory :    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` <br>
 3. Invoke the build process
@@ -477,7 +467,7 @@ Note:
 5. Flash binary image onto the platform
 6. Reset and boot new firmware to UEFI Shell
 <br>
-<span style="font-size:0.6em"><font color="gray"><i>Next slides will follow the above steps</i></font></span>
+<span style="font-size:0.7em"><font color="gray"><i>Next slides will follow the above steps</i></font></span>
 
 
 Note:
@@ -487,13 +477,14 @@ Slide says it all
 ---
 @title[fix shell properties ]
 <br>
-<p align="right"><span class="gold" >Open a Trminal prompt - fix shell properties to Execute</span></p>
-<br>
+<p align="right"><span class="gold" >Open a Terminal prompt - fix shell properties to Execute</span></p>
+
 <br>
 - Open Terminal prompt (Cnt-Alt-T)
 - Cd to work space directory
-- Fix script files
+- Fix script files to "execute"
 <br>
+<BR>
 ```
 bash$ cd ~src/Max/edk2
 bash$ chmod +x edksetup.sh
@@ -725,8 +716,8 @@ The EDK II front page will show the BIOS ID with Date/time stamp
 
  @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using OVMF package: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Link</a></span><br><br>
  @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Hardware Setup for Minnowboard Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/15'>Link</a></span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
-
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot: <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/22'>Link</a></span> <br><br>
+ 
 
 ---?image=assets/images/gitpitch-audience.jpg
 @title[Questions]
