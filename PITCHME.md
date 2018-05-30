@@ -42,7 +42,8 @@ Note:
 @title[Lesson Objective]
 <BR>
 ### <p align="center"<span class="gold"   >Platform Build Labs </span></p>
-<span style="font-size:0.9em">Lab Setup and Build for OVMF or Minnowboard Max/Tubot Platforms</span> <br>
+<span style="font-size:0.9em">Lab Setup and Build for OVMF or Minnowboard Max/Tubot</span> <br>
+<br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
  @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Lab 1:</a> Build a EDK II Platform using OVMF package </span><br><br>
