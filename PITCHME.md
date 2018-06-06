@@ -270,8 +270,6 @@ Note:
 ---?image=/assets/images/slides/Slide29.JPG
 @title[Build Ovmf Edk2 -invoke QEMU]
 ### <p align="right"><span class="gold" >Invoke QEMU</span><br></span></p>
-<br>
-
 <div class="left1">
 <span style="font-size:0.75em" >Change to run-ovmf directory under the home directory</span>
 <pre>
@@ -279,7 +277,7 @@ Note:
  bash$ cd    $HOME/run-ovmf
 ```
 </pre>
-<span style="font-size:0.75em" >Copy the OVMF.fd BIOS image created from the build to the run-ovmf directory naming it bios.bin</span>
+<span style="font-size:0.75em" >Copy the OVMF.fd BIOS image to the run-ovmf directory naming it bios.bin</span>
 <pre>
 ```
  bash$ cp ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd bios.bin
