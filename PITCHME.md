@@ -274,17 +274,23 @@ Note:
 
 <div class="left1">
 <span style="font-size:0.75em" >Change to run-ovmf directory under the home directory</span>
+<pre>
 ```
  bash$ cd    $HOME/run-ovmf
 ```
+</pre>
 <span style="font-size:0.75em" >Copy the OVMF.fd BIOS image created from the build to the run-ovmf directory naming it bios.bin</span>
+<pre>
 ```
  bash$ cp ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd bios.bin
 ```
+</pre>
 <span style="font-size:0.75em" >Run the RunQemu.sh Linux shell script</span>
+<pre>
 ```
 bash$ . RunQemu.sh
 ```
+</pre>
 <span style="font-size:0.75em" >QEMU will start and boot to the shell</span>
 </div>
 <div class="right1">
