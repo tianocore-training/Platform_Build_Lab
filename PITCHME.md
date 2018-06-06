@@ -265,6 +265,32 @@ Note:
         ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd
 ```
 
+Note:
+
+---?image=/assets/images/slides/Slide29.JPG
+@title[Build Ovmf Edk2 -invoke QEMU]
+### <p align="right"><span class="gold" >Invoke QEMU</span><br></span></p>
+<br>
+
+<div class="left1">
+<span style="font-size:0.75em" >Change to run-ovmf directory under the home directory</span>
+```
+ bash$ cd    $HOME/run-ovmf
+```
+<span style="font-size:0.75em" >Copy the OVMF.fd BIOS image created from the build to the run-ovmf directory naming it bios.bin</span>
+```
+ bash$ cp ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd bios.bin
+```
+<span style="font-size:0.75em" >Run the RunQemu.sh Linux shell script</span>
+```
+bash$ . RunQemu.sh
+```
+<span style="font-size:0.75em" >QEMU will start and boot to the shell</span>
+</div>
+<div class="right1">
+<span style="font-size:0.8em" >&nbsp;  </span>
+</div>
+ 
 
 
 Note:
