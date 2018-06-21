@@ -619,19 +619,20 @@ Slide says it all
 ---
 @title[fix shell properties ]
 <br>
-<p align="left"><span class="gold" >Fix shell properties to Execute</span></p>
+<p align="left"><span class="gold" >Fix Script Properties to Execute</span></p>
 - Open Terminal prompt (Cnt-Alt-T)
 - Cd to work space directory
-- Fix script files to "execute"
+- Fix script files to "execute"  with `chmod +x`
 <BR>
 
 ```
+ 
  bash$ cd ~src/Max/edk2
-
+ 
  bash$ chmod +x edksetup.sh
-
+ 
  bash$ cd ~src/Max/edk2-platforms/
-
+ 
  bash$ chmod +x Vlv2TbltDevicePkg/bld_vlv.sh 
  bash$ chmod +x Vlv2TbltDevicePkg/Build_IFWI.sh
  bash$ chmod +x Vlv2TbltDevicePkg/GenBiosId
