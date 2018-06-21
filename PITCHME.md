@@ -47,8 +47,8 @@ Note:
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
  @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Lab 1:</a> Build a EDK II Platform using OVMF package </span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/16'>Lab 2:</a> Hardware Setup for Minnowboard Max/Turbot </span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/24'>Lab 3:</a> Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot </span> <br><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/18'>Lab 2:</a> Hardware Setup for Minnowboard Max/Turbot </span><br><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/26'>Lab 3:</a> Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot </span> <br><br>
   
 
 
@@ -520,6 +520,25 @@ Note:
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
 
+---
+@title[Download MinnowBoard MAX Lab Source]
+### <p align="right"><span class="gold" >Download MAX Lab Source</span></p>
+<span style="font-size:0.9em" >Download the PlatformBuildLab_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/Laurie0131/PlatformBuildLab_FW/archive/master.zip">github.com PlatformBuildLab_FW.zip</a></span><br>
+<br>
+<span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
+```
+bash$ cd $HOME
+bash$ git clone https://github.com/Laurie0131/PlatformBuildLab_FW.git
+```
+<span style="font-size:0.9em" >Directory PlatformBuildLab_FW will be created</span>
+```
+   FW 
+    - PlatformBuildLab
+	   - Max                    - Minnowboard Max Source for the Labs
+	   - BaseToolsMax.tar.gz    - BaseTools for Linux GCC5 build
+	   . . .
+```
+
 ---?image=/assets/images/slides3/Slide9.JPG
 @title[MinnowBoard MAX Lab Setup]
 ### <p align="right"><span class="gold" >MinnowBoard MAX Lab Setup</span></p>
@@ -541,7 +560,7 @@ bash$ sudo apt-get install screen
 
 ---?image=/assets/images/slides3/Slide11.JPG
 @title[Get the Minnowboard Max Source]
-### <p align="right"><span class="gold" >Get the Minnowboard Max Source</span></p>
+### <p align="right"><span class="gold" >Copy Minnowboard Max Source</span></p>
 
 Note:
 - Open a terminal prompt  (Alt-Cnt-T)
@@ -589,7 +608,7 @@ Note:
 </ol>
 <br>
 <br>
-<span style="font-size:0.7em"><font color="gray"><i>Next slides will follow the above steps</i></font></span>
+<span style="font-size:0.7em"><font color="yellow"><i>Next slides will follow the above steps</i></font></span>
 
 
 Note:
@@ -604,16 +623,17 @@ Slide says it all
 - Cd to work space directory
 - Fix script files to "execute"
 <BR>
+
 ```
-bash$ cd ~src/Max/edk2
+ bash$ cd ~src/Max/edk2
 
-bash$ chmod +x edksetup.sh
+ bash$ chmod +x edksetup.sh
 
-bash$ cd ~src/Max/edk2-platforms/
+ bash$ cd ~src/Max/edk2-platforms/
 
-bash$ chmod +x Vlv2TbltDevicePkg/bld_vlv.sh 
-bash$ chmod +x Vlv2TbltDevicePkg/Build_IFWI.sh
-bash$ chmod +x Vlv2TbltDevicePkg/GenBiosId
+ bash$ chmod +x Vlv2TbltDevicePkg/bld_vlv.sh 
+ bash$ chmod +x Vlv2TbltDevicePkg/Build_IFWI.sh
+ bash$ chmod +x Vlv2TbltDevicePkg/GenBiosId
 ```
 
 Note:
@@ -837,8 +857,8 @@ The EDK II front page will show the BIOS ID with Date/time stamp
 ##### <p align="center"<span class="gold"   >Summary </span></p><br>
 
  @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2'>Lab 1:</a> Build a EDK II Platform using OVMF package </span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/16'>Lab 2:</a> Hardware Setup for Minnowboard Max/Turbot </span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/24'>Lab 3:</a> Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot </span> <br><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/18'>Lab 2:</a> Hardware Setup for Minnowboard Max/Turbot </span><br><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;<a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/26'>Lab 3:</a> Build a EDK II Platform using Minnowboard <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max/Turbot </span> <br><br>
  
 
 ---?image=assets/images/gitpitch-audience.jpg
