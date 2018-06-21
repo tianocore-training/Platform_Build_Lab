@@ -532,7 +532,7 @@ bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm
 ```
 Additional Lab Setup – `       ~src/FW/PlatformBuildLab`
 
-- MinnowBoardMax.zip 	– MinnowBoard Max Project source code 
+- Max                	– MinnowBoard Max Project source code 
 - BuildToolsMax.tar.gz 	– build tools for GCC compiler 
 - At Terminal prompt - Install Screen utility for Serial Console to run UEFI Shell 
 ```
@@ -543,11 +543,13 @@ bash$ sudo apt-get install screen
 @title[Get the Minnowboard Max Source]
 ### <p align="right"><span class="gold" >Get the Minnowboard Max Source</span></p>
 
-- Extract the file ~FW/PlatformBuildLab/MinnowboardMax.zip  to  ~src
-
-
 Note:
--  Extract the file ~FW/PlatformBuildLab/MinnowboardMax.zip  to  ~src
+- Open a terminal prompt  (Alt-Cnt-T)
+- Create a working  space source directory under the home directory
+   - bash$ mkdir ~src
+- From the FW/PlatformBuildLab folder, copy and paste folder “~FW/Max” to ~src
+ 
+
 
 ---?image=/assets/images/slides3/Slide14.JPG
 @title[Get the BaseTools]
@@ -577,13 +579,15 @@ Note:
 @title[Steps to Build & Install Firmware]
 <br><br>
 ### <p align="center"><span class="gold" >Steps to Build & Install Firmware</span></p>
-
-1. Open Terminal prompt (Cnt-Alt-T)
-2. Cd to  project directory :    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` <br>
-3. Invoke the build process
-4. Locate build output (.BIN file for BIOS image)
-5. Flash binary image onto the platform
-6. Reset and boot new firmware to UEFI Shell
+<ol>
+  <li><span style="font-size:0.9em">Open Terminal prompt (Cnt-Alt-T)</span></li>
+  <li><span style="font-size:0.9em"> Cd to  project directory :    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` </span></li>
+  <li><span style="font-size:0.9em">Invoke the build process</span></li>
+  <li><span style="font-size:0.9em"> Locate build output (.BIN file for BIOS image)</span></li>
+  <li><span style="font-size:0.9em"> Flash binary image onto the platform</span></li>
+  <li><span style="font-size:0.9em"> Reset and boot new firmware to UEFI Shell</span></li>
+</ol>
+<br>
 <br>
 <span style="font-size:0.7em"><font color="gray"><i>Next slides will follow the above steps</i></font></span>
 
@@ -595,18 +599,18 @@ Slide says it all
 ---
 @title[fix shell properties ]
 <br>
-<p align="right"><span class="gold" >Open a Terminal prompt - fix shell properties to Execute</span></p>
-
-<br>
+<p align="left"><span class="gold" >Fix shell properties to Execute</span></p>
 - Open Terminal prompt (Cnt-Alt-T)
 - Cd to work space directory
 - Fix script files to "execute"
-<br>
 <BR>
 ```
 bash$ cd ~src/Max/edk2
+
 bash$ chmod +x edksetup.sh
+
 bash$ cd ~src/Max/edk2-platforms/
+
 bash$ chmod +x Vlv2TbltDevicePkg/bld_vlv.sh 
 bash$ chmod +x Vlv2TbltDevicePkg/Build_IFWI.sh
 bash$ chmod +x Vlv2TbltDevicePkg/GenBiosId
@@ -782,7 +786,7 @@ Note:
 <br>
 <br>
 <br>
-
+<br>
 <span style="font-size:0.5em">The EDK II build generates multiple firmware volumes, which are combined in the .BIN image</span>
 
 
