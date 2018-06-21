@@ -112,7 +112,7 @@ Save and Exit
 
 +++
 @title[Create QEMU run script 02]
-### <p align="right"><span class="gold" >Create Qemu Run Script</span></p>
+<p align="right"><span class="gold" >Create Qemu Run Script</span><span style="font-size:0.7em" ><font color="white"><br>- Copy and paste</font></span></p>
 1.<span style="font-size:0.9em" >Create a run-ovmf directory under the home directory</span>
 ```
 bash$ cd ~
@@ -295,7 +295,7 @@ bash$ build
 +++
 @title[Build Ovmf Edk2 -update target.txt]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
+<p align="right"><span style="font-size:0.8em" >–Update Target.txt - COPY and PASTE</span></p>
 <span style="font-size:0.9em" >Edit the Conf/target.txt file - Copy and Paste</span>
 ```
 bash$ gedit Conf/target.txt
@@ -525,7 +525,7 @@ Note:
 ### <p align="right"><span class="gold" >Download MAX Lab Source</span></p>
 <span style="font-size:0.9em" >Download the PlatformBuildLab_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/Laurie0131/PlatformBuildLab_FW/archive/master.zip">github.com PlatformBuildLab_FW.zip</a></span><br>
 <br>
-<span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
+<span style="font-size:0.9em" >OR<br>Use `git clone` to download the PlatformBuildLab_FW<span>
 ```
 bash$ cd $HOME
 bash$ git clone https://github.com/Laurie0131/PlatformBuildLab_FW.git
@@ -536,6 +536,7 @@ bash$ git clone https://github.com/Laurie0131/PlatformBuildLab_FW.git
     - PlatformBuildLab
 	   - Max                    - Minnowboard Max Source for the Labs
 	   - BaseToolsMax.tar.gz    - BaseTools for Linux GCC5 build
+	   - MinnowBoard.MAX.FirmwareUpdateX64.efi  - UEFI App to flash Firmware .BIN to Target
 	   . . .
 ```
 
