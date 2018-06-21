@@ -644,7 +644,7 @@ Note:
 ---?image=/assets/images/slides3/Slide20.JPG
 @title[Build Process for DEBUG]
 ### <p align="right"><span class="gold" >Build Process for DEBUG </span></p>
-<span style="font-size:0.9em">From Terminal Prompt enter:  &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the script will Pause</i></font></span>
+<span style="font-size:0.9em">From Terminal Prompt enter:  &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span>
 ```
 bash$ cd Vlv2TbltDevicePkg 
 bash$ . Build_IFWI.sh MNW2 Debug
