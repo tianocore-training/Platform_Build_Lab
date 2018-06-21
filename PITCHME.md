@@ -180,7 +180,7 @@ Note:
 ### <p align="right"><span class="gold" >Download Lab Material</span><br></span></p>
 <span style="font-size:0.9em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/Laurie0131/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a></span><br>
 <br>
-<span style="font-size:0.9em" >OR<br>Use git clone to download the Lab_Material_FW<span>
+<span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
 ```
 bash$ cd $HOME
 bash$ git clone https://github.com/Laurie0131/Lab_Material_FW.git
@@ -189,10 +189,10 @@ bash$ git clone https://github.com/Laurie0131/Lab_Material_FW.git
 ```
    FW 
     - Documentation 
-	- DriverWizard /
-	- edk2 /     // Same as https://github.com/tianocore/edk2
-	- edk2Linux /
-	- LabSampleCode /
+	- DriverWizard 
+	- edk2      
+	- edk2Linux 
+	- LabSampleCode 
 ```
 
 
@@ -268,8 +268,7 @@ bash$ . edksetup.sh
 <br>
 <br>
 <br>
-<br>
-<p align="right"><span style="font-size:0.6em" >More info: <a href=" https://github.com/tianocore/tianocore.github.io/wiki/OVMF "> https://github.com/tianocore/tianocore.github.io/wiki/OVMF </a>
+<p align="right"><span style="font-size:0.6em" >More info: <a href=" https://github.com/tianocore/tianocore.github.io/wiki/OVMF "> tianocore - wiki/OVMF </a>
 </span></p>
 
 Note:
@@ -292,6 +291,33 @@ bash$ gedit Conf/target.txt
 bash$ cd ~src/edk2
 bash$ build
 ```
+
++++
+@title[Build Ovmf Edk2 -update target.txt]
+### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
+<span style="font-size:0.9em" >Edit the Conf/target.txt file - Copy and Paste</span>
+```
+bash$ gedit Conf/target.txt
+```
+<span style="font-size:0.9em" >In the gedit update: </span>
+```
+ ACTIVE_PLATFORM       = OvmfPkg/OvmfPkgX64.dsc
+   #. . .
+ TARGET_ARCH           = X64
+   #. . .
+ TOOL_CHAIN_TAG        = GCC5
+```
+<span style="font-size:0.9em" >Then Build</span>
+```
+ bash$ cd ~src/edk2
+ bash$ build
+```
+
+Note:
+
+
+
 ---?image=/assets/images/slides/Slide22.JPG
 @title[Build Ovmf Edk2 -build inside Terminal]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
