@@ -110,6 +110,29 @@ Create a run-ovmf directory under the home directory
 <br>
 Save and Exit
 
++++
+@title[Create QEMU run script 02]
+### <p align="right"><span class="gold" >Create Qemu Run Script</span></p>
+1.<span style="font-size:0.9em" >Create a run-ovmf directory under the home directory</span>
+```
+bash$ cd ~
+bash$ mkdir ~run-ovmf
+bash$ cd run-ovmf
+```
+2.<span style="font-size:0.9em" >Create a directory to use as a hard disk image </span>
+```
+bash$ mkdir hda-contents
+```
+3.<span style="font-size:0.9em" >Create a Linux shell script to run the QEMU from the run-ovmf directory </span>
+```
+bash$ gedit RunQemu.sh
+// In gedit:
+qemu-system-x86_64 -pflash bios.bin -hda fat:rw:hda-contents -net none     -debugcon file:debug.log -global isa-debugcon.iobase=0x402 
+```
+4.<span style="font-size:0.9em" >Save and Exit</span>
+
+Note:
+
 
 ---?image=/assets/images/slides/Slide7.JPG
 @title[Optional - Downloading the Edk II Source]
@@ -152,10 +175,31 @@ Note:
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup Lab Material </span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab_Material_FW.zip</span>
 
+---
+@title[Download Lab_Material_FW -getting the Source ]
+### <p align="right"><span class="gold" >Download Lab Material</span><br></span></p>
+<span style="font-size:0.9em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/Laurie0131/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a></span><br>
+<br>
+<span style="font-size:0.9em" >OR<br>Use git clone to download the Lab_Material_FW<span>
+```
+bash$ cd $HOME
+bash$ git clone https://github.com/Laurie0131/Lab_Material_FW.git
+```
+<span style="font-size:0.9em" >Directory Lab_Material_FW will be created</span>
+```
+   FW 
+    - Documentation 
+	- DriverWizard /
+	- edk2 /     // Same as https://github.com/tianocore/edk2
+	- edk2Linux /
+	- LabSampleCode /
+```
+
+
 ---?image=/assets/images/slides/Slide10.JPG
 @title[Build Ovmf Edk2 -getting the Source ]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Extract the Source</font></span></p>
 
 Note:
 Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory FW )
