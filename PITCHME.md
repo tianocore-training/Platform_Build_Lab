@@ -42,7 +42,7 @@ Note:
 @title[Lesson Objective]
 <BR>
 ### <p align="center"<span class="gold"   >Platform Build Labs </span></p>
-<span style="font-size:0.9em">Lab Setup and Build for OVMF or Minnowboard Max/Tubot</span> <br>
+<span style="font-size:0.9em">Lab Setup and Build for OVMF or Minnowboard Max/Turbot</span> <br>
 <br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
