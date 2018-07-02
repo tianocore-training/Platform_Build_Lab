@@ -500,9 +500,9 @@ Note:
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
 <br>
 - <span style="font-size:0.9em"><font  color="yellow">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
-  - <span style="font-size:0.9em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
+  - <span style="font-size:0.9em">V.98 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
 - <span style="font-size:0.9em"><font  color="white">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
-- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
+- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/minnowboard_max-rel_0_98-releasenotes.txt"> Release Notes</a></span>
 
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
@@ -513,9 +513,9 @@ Note:
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
 <br>
 - <span style="font-size:0.9em"><font  color="white">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
-  - <span style="font-size:0.9em">V.97 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
+  - <span style="font-size:0.9em">V.98 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
 - <span style="font-size:0.9em"><font  color="Yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
-- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/MinnowBoard_MAX-Rel_0.97-ReleaseNotes.txt"> Release Notes</a></span>
+- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/minnowboard_max-rel_0_98-releasenotes.txt"> Release Notes</a></span>
 
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
