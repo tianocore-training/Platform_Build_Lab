@@ -1,5 +1,5 @@
 <!--- @file
-  Readme.md for UEFI / EDK II Training UEFI_Boot_Flow_Pres
+  Readme.md for UEFI / EDK II Training Platform Build Lab
 
   Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
 
