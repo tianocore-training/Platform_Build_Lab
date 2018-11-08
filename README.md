@@ -31,5 +31,5 @@
 # Platform_Build_LAB
 
   Build a EDK II open source Platform either (OVMF or Minnowboard MAX
-To see the Slides goto https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/
+To see the Slides goto https://gitpitch.com/tianocore-training/Platform_Build_LAB/master#/
 
