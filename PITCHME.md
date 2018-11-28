@@ -134,10 +134,33 @@ qemu-system-x86_64 -pflash bios.bin -hda fat:rw:hda-contents -net none     -debu
 Note:
 
 
----?image=/assets/images/slides/Slide7.JPG
+---
 @title[Optional - Downloading the Edk II Source]
-### <p align="right"><span class="gold" >Down load the Edk II Source<br><i>- Optional</i></span></p>
+<p align="right"><span class="gold" ><b>Download the Edk II Source&nbsp;&nbsp;<i>- Optional</i></b></span></p>
 
+
+<span style="font-size:0.9em" ><i>OPTIONAL</i> - Open a  “git” command prompt and create a source working directory</span>
+```
+  bash$ mkdir WS
+  bash$ cd WS
+```
+
+<span style="font-size:0.8em" >OPTIONAL - Internet Proxies – (company Firewall used for example)</span>
+
+```
+ bash$ git config --global https.proxy <proxyname>.domain.com:<port>
+ bash$ git config --global http.proxy <proxyname>.domain.com:<port>
+```
+
+<span style="font-size:0.8em" >OPTIONAL - Download edk2 source tree using Git command prompt</span>
+
+```
+  bash$ git clone https://github.com/tianocore/edk2.git
+  
+  bash$  make -C edk2/BaseTools
+```
+
+<span style="font-size:0.7em" ><b>@color[yellow](NOTE:)</b> Lab Material will have a different “edk2” </span>
 
 Note:
 
@@ -500,9 +523,9 @@ Note:
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
 <br>
 - <span style="font-size:0.9em"><font  color="yellow">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
-  - <span style="font-size:0.9em">V.98 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
+  - <span style="font-size:0.9em">V 1.00 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
 - <span style="font-size:0.9em"><font  color="white">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
-- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/minnowboard_max-rel_0_98-releasenotes.txt"> Release Notes</a></span>
+- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/minnowboard_max-rel_1_00-releasenotes.txt"> Release Notes</a></span>
 
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
@@ -513,9 +536,9 @@ Note:
 <p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
 <br>
 - <span style="font-size:0.9em"><font  color="white">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
-  - <span style="font-size:0.9em">V.98 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
+  - <span style="font-size:0.9em">V 1.00 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
 - <span style="font-size:0.9em"><font  color="Yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
-- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/minnowboard_max-rel_0_98-releasenotes.txt"> Release Notes</a></span>
+- <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/minnowboard_max-rel_1_00-releasenotes.txt"> Release Notes</a></span>
 
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
@@ -609,7 +632,7 @@ Note:
 </ol>
 <br>
 <br>
-<span style="font-size:0.7em"><font color="yellow"><i>Next slides will follow the above steps</i></font></span>
+<span style="font-size:0.9em"><font color="yellow"><i><b>Next slides will follow the above steps</b></i></font></span>
 
 
 Note:
@@ -724,11 +747,14 @@ bash$ . Build_IFWI.sh MNW2 Release
 Note:
  Slide says it all
 
----?image=/assets/images/slides3/Slide33.JPG
-<!-- .slide: data-transition="none" -->
+
+---
 @title[DEBUG & RELEASE Differences]
 ### <p align="right"><span class="gold" >DEBUG & RELEASE Differences</span></p>
-
+@box[bg-purple text-white rounded fragment](<span style="font-size:0.95em" >Slower boot because the time it takes to display debug info </span>)
+@box[bg-green text-white rounded fragment](<span style="font-size:0.95em" >Larger image because of debug code & embedded info </span>)
+@box[bg-orange text-white rounded fragment](<span style="font-size:0.95em" >Uses the serial port for debug string output</span>)
+@box[bg-blue text-white rounded fragment](<span style="font-size:0.95em" >Contains detailed debug strings that show the boot progress and various `ASSERT` / `TRACE` errors</span>)
  
 
 Note:
@@ -746,54 +772,6 @@ Note:
 - Faster boot than DEBUG
 
  
-+++?image=/assets/images/slides3/Slide34.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[DEBUG & RELEASE Differences 02]
-### <p align="right"><span class="gold" >DEBUG & RELEASE Differences</span></p>
-
-Note: 
-
- 
-+++?image=/assets/images/slides3/Slide35.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[DEBUG & RELEASE Differences 03]
-### <p align="right"><span class="gold" >DEBUG & RELEASE Differences</span></p>
-
-Note: 
- 
- 
-+++?image=/assets/images/slides3/Slide36.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[DEBUG & RELEASE Differences 04]
-### <p align="right"><span class="gold" >DEBUG & RELEASE Differences</span></p>
-
-Note: 
-  
- 
-+++?image=/assets/images/slides3/Slide37.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[DEBUG & RELEASE Differences 05]
-### <p align="right"><span class="gold" >DEBUG & RELEASE Differences</span></p>
-
-Note: 
-
-### DEBUG build …
-- Contains detailed debug strings that show the boot process, along with various ASSERT/TRACE errors
-- Uses the serial port for debug string output
-- Larger image than RELEASE, due to the embedded debug info
-- Slower boot than RELEASE, due to the time it takes to display the debug info
-
-
-### RELEASE build …
-- Does not contain the debug strings
-- Does not use the serial port for debug output
-- Smaller image than DEBUG
-- Faster boot than DEBUG
-
 ---?image=/assets/images/slides3/Slide39.JPG
 @title[Build Process Completed]
 ### <p align="right"><span class="gold" >Build Process Completed</span></p>
@@ -815,9 +793,17 @@ Note:
 Note:
 The EDK II build generates multiple firmware volumes, which are combined in the .BIN image
 
----?image=/assets/images/slides3/Slide41.JPG
+---?image=/assets/images/slides3/Slide41_1.JPG
 @title[Flash onto the MinnowBoard MAX]
-### <p align="right"><span class="gold" >Flasing the New BIOS</span></p>
+### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
+
+1.  <span style="font-size:0.85em" >&nbsp;&nbsp;Access Max Binary image file from build folder</span>
+  - <span style="font-size:0.75em" >`~src/Max/Vlv2TbltDevicePkg/Stitch`</span>
+  - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span>
+  - <span style="font-size:0.75em" >RELEASE	MNW2MAX1.X64.R_0099_01_GCC.bin</span>
+2. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy BIN files to a USB Thumb drive</span>
+3. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`MinnowBoard.MAX.FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb &nbsp;&nbsp;drive from `~/FW/PlatformBuildLab`</span>
+4. <span style="font-size:0.85em" >&nbsp;&nbsp;Boot to UEFI Shell on Max and type "`FS0:`"</span>
  
 Note:
 1.  Access Max Binary image file from build folder
@@ -830,22 +816,44 @@ Note:
 
 
 
----?image=/assets/images/slides3/Slide43.JPG
+---?image=/assets/images/slides3/Slide43_1.JPG
 @title[Flash onto the MinnowBoard MAX 02]
 ### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
+ 
+<p style="line-height:70%"><span style="font-size:0.85em" >5.  &nbsp;&nbsp;Run update `.efi` utility with either BIN file </span> <span style="font-size:0.65em" >&lpar;<i>Note</i> the “TAB” Key <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will fill out the command line for you &rpar;</span></p>
+
+```
+FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
+```
+<br>
+<span style="font-size:0.75em" >Wait for the new firmware update to finish</span>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:70%"><span style="font-size:0.85em" >6. &nbsp;&nbsp;Reset and boot new firmware</span></p>
+
  
 Note:
 5. Run update .efi utility with either BIN file  (Note the “TAB” Key will fill out the command line for you 
 ```
-FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0096_01_GCC.bin
+FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
 ```
 
 6. Reset and boot new firmware
 
 
----?image=/assets/images/slides3/Slide45.JPG
+---?image=/assets/images/slides3/Slide45_1.JPG
 @title[Verify after Firmware Update]
 ### <p align="right"><span class="gold" >Verify after Firmware Update</span></p>
+ 
+- <span style="font-size:0.85em" >Verify that the Firmware was updated by checking the Date</span>
+- <span style="font-size:0.85em" >At the shell prompt type “exit”</span>
+- <span style="font-size:0.85em" >The EDK II front page will show the BIOS ID with Date/time stamp</span>
+ 
  
 Note:
 

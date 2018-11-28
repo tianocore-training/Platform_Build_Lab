@@ -23,12 +23,14 @@ html:-moz-full-screen-ancestor {
   color: #BF5122;
     text-align: center; 
   text-align: top;
+    font-weight: bold;
 }
 
 .gold {
   color: #e49436;
     text-align: center; 
   text-align: top;
+     font-weight: bold;
 }
 
 .gray {
@@ -224,6 +226,21 @@ span.aside {
   margin-left: 10px; 
 }
 
+
+.gp-bullet-orange { 
+  color:#d85821;
+  margin-left: 10px; 
+}
+  
+.gp-bullet-blue { 
+  color:#4487f2;
+  margin-left: 10px; 
+}  
+  
+.gp-bullet-purple { 
+  color:#643885;
+  margin-left: 10px; 
+}  
 .gp-bullet-cyan { 
   color:#00FFFF;
   margin-left: 10px; 
@@ -303,6 +320,8 @@ h6 {
   color: #300a24;
 }
 
+table#recTable{width:100%; border:1px solid gray;}
+#recTable tr td {height:0.2px; border:1px solid gray;}
 
 
 
