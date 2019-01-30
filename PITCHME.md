@@ -320,7 +320,7 @@ Note:
 
 @snap[north-east span-50 ]
 <br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Building `BaseTools`</font></span></p>
 @snapend
 
 @snap[north-west span-100 ]
