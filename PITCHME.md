@@ -373,9 +373,9 @@ bash$ . edksetup.sh
 @title[Build Ovmf Edk2 -update target.txt]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
 
-@snap[north-east span-50 ]
+@snap[north-east span-60 ]
 <br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Update Target.txt & Build</font></span></p>
 @snapend
 
 
@@ -871,7 +871,7 @@ At the Terminal prompt - install Screen utility for Serial Console to run UEFI S
 <p style="line-height:40%" align="left"><span style="font-size:0.55em"><font color="yellow">
 <br>&nbsp;&nbsp;
 &hyphen;&nbsp;&nbsp;MinnowBoard Max Project source code<br>&nbsp;&nbsp;
-&hyphen;&nbsp;&nbsp;Build told for GCC compiler<br><br>&nbsp;&nbsp;
+&hyphen;&nbsp;&nbsp;Build tools for GCC compiler<br><br>&nbsp;&nbsp;
 &nbsp;&nbsp;<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
 </font></snap></p>
