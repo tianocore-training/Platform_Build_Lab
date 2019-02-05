@@ -66,7 +66,7 @@ Note:
 Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 "> tianocore wiki Ubuntu_1610</a> 
 - Example Ubuntu 16.04<br>
 - The following need to be accessible for building Edk II Platforms, From the terminal prompt (Cnt-Alt-T) :
-```shell
+```bash
 bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm 
 ```
 ```Assembly
@@ -77,7 +77,7 @@ bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm
 ; gcc-5 - GNU C compiler (v5.4.0 as of Ubuntu 16.04 LTS)
 ; nasm - General-purpose x86 assembler 
 ```
-```shell
+```bash
 bash$ sudo apt-get install qemu
 ```
 ```Assembly
@@ -90,17 +90,17 @@ Note:
 @title[Create QEMU run script]
 ### <p align="right"><span class="gold" >Create Qemu Run Script</span></p>
 <span style="font-size:0.9em" >1. Create a run-ovmf directory under the home directory</span>
-```
+```bash
 bash$ cd ~
 bash$ mkdir ~run-ovmf
 bash$ cd run-ovmf
 ```
 <span style="font-size:0.9em" >2. Create a directory to use as a hard disk image </span>
-```
+```bash
 bash$ mkdir hda-contents
 ```
 <span style="font-size:0.9em" >3. Create a Linux shell script to run the QEMU from the run-ovmf directory </span>
-```
+```bash
 bash$ gedit RunQemu.sh
 ```
 
@@ -128,17 +128,17 @@ Save and Exit
 @title[Create QEMU run script 02]
 <p align="right"><span class="gold" >Create Qemu Run Script</span><span style="font-size:0.7em" ><font color="white"><br>- Copy and paste</font></span></p>
 1.<span style="font-size:0.9em" >Create a run-ovmf directory under the home directory</span>
-```
+```bash
 bash$ cd ~
 bash$ mkdir ~run-ovmf
 bash$ cd run-ovmf
 ```
 2.<span style="font-size:0.9em" >Create a directory to use as a hard disk image </span>
-```
+```bash
 bash$ mkdir hda-contents
 ```
 3.<span style="font-size:0.9em" >Create a Linux shell script to run the QEMU from the run-ovmf directory </span>
-```
+```bash
 bash$ gedit RunQemu.sh
 // In gedit:
 qemu-system-x86_64 -pflash bios.bin -hda fat:rw:hda-contents -net none     -debugcon file:debug.log -global isa-debugcon.iobase=0x402 
@@ -154,21 +154,21 @@ Note:
 
 
 <span style="font-size:0.9em" ><i>OPTIONAL</i> - Open a  “git” command prompt and create a source working directory</span>
-```
+```bash
   bash$ mkdir WS
   bash$ cd WS
 ```
 
 <span style="font-size:0.8em" >OPTIONAL - Internet Proxies – (company Firewall used for example)</span>
 
-```
+```bash
  bash$ git config --global https.proxy <proxyname>.domain.com:<port>
  bash$ git config --global http.proxy <proxyname>.domain.com:<port>
 ```
 
 <span style="font-size:0.8em" >OPTIONAL - Download edk2 source tree using Git command prompt</span>
 
-```
+```bash
   bash$ git clone https://github.com/tianocore/edk2.git
   
   bash$  make -C edk2/BaseTools
@@ -218,12 +218,12 @@ Note:
 <span style="font-size:0.9em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a></span><br>
 <br>
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
-```
+```bash
 bash$ cd $HOME
 bash$ git clone https://github.com/tianocore-training/Lab_Material_FW.git
 ```
 <span style="font-size:0.9em" >Directory Lab_Material_FW will be created</span>
-```
+```bash
    FW 
     - Documentation 
 	- DriverWizard 
@@ -416,7 +416,7 @@ Note:
   - More info: https://github.com/tianocore/tianocore.github.io/wiki/OVMF 
 
 - Edit the file Conf/target.txt
-```
+```bash
 bash$ gedit Conf/target.txt
 ```
    
@@ -426,7 +426,7 @@ bash$ gedit Conf/target.txt
 
 
 - Save and Exit
-```
+```bash
 bash$ cd ~src/edk2
 bash$ build
 ```
@@ -441,11 +441,11 @@ bash$ build
 @snapend
 <br>
 <span style="font-size:0.9em" >Edit the Conf/target.txt file - Copy and Paste</span>
-```
+```bash
 bash$ gedit Conf/target.txt
 ```
 <span style="font-size:0.9em" >In the gedit update: </span>
-```
+```xml
  ACTIVE_PLATFORM       = OvmfPkg/OvmfPkgX64.dsc
    #. . .
  TARGET_ARCH           = X64
@@ -453,7 +453,7 @@ bash$ gedit Conf/target.txt
  TOOL_CHAIN_TAG        = GCC5
 ```
 <span style="font-size:0.9em" >Then Build</span>
-```
+```bash
  bash$ cd ~src/edk2
  bash$ build
 ```
@@ -504,19 +504,19 @@ Note:
 ### <p align="right"><span class="gold" >Invoke QEMU</span><br></span></p>
 <span style="font-size:0.75em" >Change to run-ovmf directory under the home directory</span>
 <div class="left1">
-<pre>
+<pre class='bash'>
 ```
  bash$ cd $HOME/run-ovmf
 ```
 </pre>
 <span style="font-size:0.75em" >Copy the OVMF.fd BIOS image to the run-ovmf directory naming it bios.bin</span>
-<pre>
+<pre class='bash'>
 ```
  bash$ cp ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd bios.bin
 ```
 </pre>
 <span style="font-size:0.75em" >Run the RunQemu.sh Linux shell script</span>
-<pre>
+<pre class='bash'>
 ```
 bash$ . RunQemu.sh
 ```
@@ -819,12 +819,12 @@ Note:
 <span style="font-size:0.9em" >Download the PlatformBuildLab_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/PlatformBuildLab_FW/archive/master.zip">github.com PlatformBuildLab_FW.zip</a></span><br>
 <br>
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the PlatformBuildLab_FW<span>
-```
+```bash
 bash$ cd $HOME
 bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 ```
 <span style="font-size:0.9em" >Directory PlatformBuildLab_FW will be created</span>
-```
+```bash
    FW 
     - PlatformBuildLab
 	   - Max                    - Minnowboard Max Source for the Labs
@@ -995,7 +995,7 @@ Slide says it all
 </span></p>
 <BR>
 
-```
+```bash
  
  bash$ cd ~src/Max/edk2
  
@@ -1051,7 +1051,7 @@ There is also this capability that is part of the .dsc but many developers have 
 <br>
 <br>
 <p align="left"><span style="font-size:0.85em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span></p>
-<pre>
+<pre class='bash'>
 ```
 bash$ cd Vlv2TbltDevicePkg 
 bash$ . Build_IFWI.sh MNW2 Debug
@@ -1113,7 +1113,7 @@ Note:
 	</tr>
 	<tr class="fragment">
 		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>TOOL_CHAIN_TAG</b></span></p></td>
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](VS2013x86)</b></span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](GCC5)</b></span></p></td>
 		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>VS Tool Chain</b></span></p></td>
 	</tr>
 	<tr class="fragment">
@@ -1176,7 +1176,7 @@ many will have "ifdef" statements in the major .dsc file in order to enable a fe
 <br>
 <br>
 <p align="left"><span style="font-size:0.85em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span></p>
-<pre>
+<pre class='bash'>
 ```
 bash$ cd Vlv2TbltDevicePkg 
 bash$ . Build_IFWI.sh MNW2 Release
@@ -1293,7 +1293,7 @@ Note:
  
 <p style="line-height:70%"><span style="font-size:0.85em" >5.  &nbsp;&nbsp;Run update `.efi` utility with either BIN file </span> <span style="font-size:0.65em" >&lpar;<i>Note</i> the “TAB” Key <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will fill out the command line for you &rpar;</span></p>
 
-```
+```bash
 FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
 ```
 <br>
@@ -1310,7 +1310,7 @@ FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
  
 Note:
 5. Run update .efi utility with either BIN file  (Note the “TAB” Key will fill out the command line for you 
-```
+```bash
 FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
 ```
 
